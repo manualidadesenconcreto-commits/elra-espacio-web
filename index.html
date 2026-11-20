@@ -36,9 +36,9 @@
       background-color: #F5F4F0;
       color: #141716;
     }
-    .grid-blueprint {
-      background-image: linear-gradient(to right, rgba(20, 23, 22, 0.04) 1px, transparent 1px),
-                        linear-gradient(to bottom, rgba(20, 23, 22, 0.04) 1px, transparent 1px);
+    .grid-blueprint-dark {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
       background-size: 48px 48px;
     }
   </style>
@@ -46,7 +46,7 @@
 <body class="font-sans antialiased selection:bg-elra-terracotta selection:text-white">
 
   <!-- NAVEGACIÓN -->
-  <header class="sticky top-0 z-40 bg-elra-stone/90 backdrop-blur-md border-b border-black/10">
+  <header class="sticky top-0 z-40 bg-elra-stone/95 backdrop-blur-md border-b border-black/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <a href="#inicio" class="flex items-center gap-3 group">
         <div class="w-10 h-10 bg-elra-dark text-white flex items-center justify-center font-display font-bold text-lg tracking-tighter group-hover:bg-elra-terracotta transition-colors">
@@ -83,53 +83,53 @@
     </div>
   </header>
 
-  <!-- HERO PRINCIPAL -->
-  <section id="inicio" class="grid-blueprint border-b border-black/10">
+  <!-- HERO PRINCIPAL (PORTADA OSCURA) -->
+  <section id="inicio" class="bg-elra-dark text-white grid-blueprint-dark border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
       <div class="grid lg:grid-cols-12 gap-12 items-center">
         <div class="lg:col-span-7 space-y-6">
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-white border border-black/10 text-xs font-medium uppercase tracking-widest text-neutral-700">
-            <span class="w-2 h-2 rounded-full bg-elra-sage"></span>
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 border border-white/15 text-xs font-medium uppercase tracking-widest text-neutral-200">
+            <span class="w-2 h-2 rounded-full bg-elra-terracotta"></span>
             Arquitectura · Urbanismo · Paisajismo
           </div>
 
-          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-elra-dark leading-[1.08]">
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.08]">
             Orden técnico, identidad territorial y espacios que perduran.
           </h1>
 
-          <p class="text-lg text-neutral-600 max-w-2xl leading-relaxed">
-            En <strong class="text-elra-dark font-semibold">ELRA</strong> dirigimos proyectos integrales desde el diagnóstico bioclimático y urbano hasta la ejecución constructiva, garantizando precisión presupuestaria, calidad espacial y liderazgo en cada etapa.
+          <p class="text-lg text-neutral-300 max-w-2xl leading-relaxed">
+            En <strong class="text-white font-semibold">ELRA</strong> dirigimos proyectos integrales desde el diagnóstico bioclimático y urbano hasta la ejecución constructiva, garantizando precisión presupuestaria, calidad espacial y liderazgo en cada etapa.
           </p>
 
           <div class="flex flex-wrap gap-4 pt-2">
-            <a href="#contacto" class="px-7 py-4 bg-elra-dark text-white font-medium text-sm hover:bg-elra-terracotta transition-colors">
+            <a href="#contacto" class="px-7 py-4 bg-elra-terracotta text-white font-medium text-sm hover:bg-white hover:text-elra-dark transition-colors">
               Solicitar Reunión de Diagnóstico
             </a>
-            <a href="#proyectos" class="px-7 py-4 bg-white border border-black/15 text-elra-dark font-medium text-sm hover:border-elra-dark transition-colors">
+            <a href="#proyectos" class="px-7 py-4 bg-white/10 border border-white/20 text-white font-medium text-sm hover:border-white transition-colors">
               Explorar Portafolio Seleccionado
             </a>
           </div>
 
           <!-- Indicadores de solvencia -->
-          <div class="grid grid-cols-3 gap-6 pt-8 border-t border-black/10 max-w-xl">
+          <div class="grid grid-cols-3 gap-6 pt-8 border-t border-white/15 max-w-xl">
             <div>
-              <span class="font-display text-2xl sm:text-3xl font-bold text-elra-dark block">100%</span>
-              <span class="text-xs text-neutral-500 uppercase tracking-wider">Trazabilidad BIM y Técnica</span>
+              <span class="font-display text-2xl sm:text-3xl font-bold text-white block">100%</span>
+              <span class="text-xs text-neutral-400 uppercase tracking-wider">Trazabilidad BIM y Técnica</span>
             </div>
             <div>
-              <span class="font-display text-2xl sm:text-3xl font-bold text-elra-sage block">4 Fases</span>
-              <span class="text-xs text-neutral-500 uppercase tracking-wider">Control de Plazos y Obra</span>
+              <span class="font-display text-2xl sm:text-3xl font-bold text-emerald-400 block">4 Fases</span>
+              <span class="text-xs text-neutral-400 uppercase tracking-wider">Control de Plazos y Obra</span>
             </div>
             <div>
               <span class="font-display text-2xl sm:text-3xl font-bold text-elra-terracotta block">3 Escalas</span>
-              <span class="text-xs text-neutral-500 uppercase tracking-wider">Edificio, Ciudad y Paisaje</span>
+              <span class="text-xs text-neutral-400 uppercase tracking-wider">Edificio, Ciudad y Paisaje</span>
             </div>
           </div>
         </div>
 
         <!-- Tarjeta de Resumen Directivo -->
         <div class="lg:col-span-5">
-          <div class="bg-elra-dark text-white p-8 sm:p-10 shadow-2xl relative overflow-hidden">
+          <div class="bg-[#1B201E] border border-white/15 text-white p-8 sm:p-10 shadow-2xl relative overflow-hidden">
             <div class="flex items-center justify-between border-b border-white/15 pb-4 mb-6">
               <span class="text-xs uppercase tracking-[0.2em] text-neutral-400">Estándar de Gestión ELRA</span>
               <span class="text-xs font-mono text-elra-terracotta">ISO / BIM READY</span>
@@ -365,4 +365,218 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-elra-dark text-neutral-4
+  <footer class="bg-elra-dark text-neutral-400 py-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <div class="flex items-center gap-3">
+        <span class="font-display font-bold text-white text-base">ELRA</span>
+        <span>· Estudio de Arquitectura, Urbanismo y Paisajismo</span>
+      </div>
+      <div>
+        <span>elraespacio.com · Todos los derechos reservados © <span id="year"></span></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL FICHA TÉCNICA DE PROYECTO -->
+  <div id="projectModal" class="hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+      <button id="closeModal" aria-label="Cerrar ficha" class="absolute top-5 right-5 w-9 h-9 border border-black/15 flex items-center justify-center text-neutral-700 hover:bg-elra-dark hover:text-white transition-colors">
+        ✕
+      </button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script>
+    // =========================================================================
+    // BASE DE DATOS DE PROYECTOS (Edita o agrega tus obras aquí fácilmente)
+    // =========================================================================
+    const PROJECTS_DATA = [
+      {
+        id: 1,
+        titulo: "Remodelación Paisajística Plaza Boquerón",
+        categoria: "paisajismo",
+        etiqueta: "Paisajismo y Espacio Público",
+        ubicacion: "Villa Montes · Gran Chaco",
+        superficie: "6.400 m²",
+        anio: "2025",
+        resumen: "Regeneración integral con diseño universal, áreas educativas juveniles, sombra bioclimática y Sistemas Urbanos de Drenaje Sostenible (SUDS).",
+        detalles: [
+          "Incorporación de vegetación nativa de bajo requerimiento hídrico (Algarrobo blanco, Algarrobo negro y Mistol).",
+          "Pavimentos permeables con canto rodado de río y grava drenante para control de escorrentías.",
+          "Zonificación accesible para infancia, juventud y adultos mayores con iluminación eficiente."
+        ],
+        color: "bg-elra-sage"
+      },
+      {
+        id: 2,
+        titulo: "Humanización Espacial Unidad Pediátrica",
+        categoria: "arquitectura",
+        etiqueta: "Arquitectura y Salud",
+        ubicacion: "Tarija · Equipamiento Hospitalario",
+        superficie: "1.850 m²",
+        anio: "2025",
+        resumen: "Redistribución funcional y acondicionamiento ambiental basado en neuroarquitectura y diseño basado en evidencia para pacientes pediátricos.",
+        detalles: [
+          "Optimización de flujos médicos y separación clara entre áreas de hospitalización, aislamiento y apoyo familiar.",
+          "Control acústico, iluminación circadiana y paleta cromática orientada a reducir el estrés hospitalario.",
+          "Cumplimiento estricto de normativa sanitaria y protocolos de bioseguridad."
+        ],
+        color: "bg-elra-terracotta"
+      },
+      {
+        id: 3,
+        titulo: "Corredor Urbano Sostenible Barrio La Pampa",
+        categoria: "urbanismo",
+        etiqueta: "Urbanismo y Movilidad",
+        ubicacion: "Tarija · Área Urbana",
+        superficie: "14.200 m²",
+        anio: "2024",
+        resumen: "Reordenamiento vial peatonal, integración de usos de suelo residencial y recuperación de bordes urbanos con criterios bioclimáticos.",
+        detalles: [
+          "Priorización del peatón mediante ensanche de aceras, cruces seguros y arborización continua.",
+          "Diagnóstico de densidad, equipamiento barrial y conectividad con ejes principales.",
+          "Manual técnico de mobiliario urbano y señalética replicable."
+        ],
+        color: "bg-elra-slate"
+      }
+    ];
+
+    // Renderizado de tarjetas de proyecto
+    const projectsGrid = document.getElementById('projectsGrid');
+    const filterButtons = document.querySelectorAll('.filter-btn');
+
+    function renderProjects(filter = 'todos') {
+      const filtered = filter === 'todos'
+        ? PROJECTS_DATA
+        : PROJECTS_DATA.filter(p => p.categoria === filter);
+
+      projectsGrid.innerHTML = filtered.map(project => `
+        <article class="bg-white border border-black/10 flex flex-col justify-between group hover:border-elra-dark transition-all">
+          <div>
+            <div class="h-44 ${project.color} p-6 flex flex-col justify-between text-white relative overflow-hidden">
+              <div class="flex items-center justify-between text-xs font-mono opacity-90">
+                <span>${project.etiqueta}</span>
+                <span>${project.anio}</span>
+              </div>
+              <div>
+                <span class="text-xs uppercase tracking-widest opacity-80 block">${project.ubicacion}</span>
+                <span class="text-sm font-semibold">${project.superficie}</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl font-bold text-elra-dark group-hover:text-elra-terracotta transition-colors">
+                ${project.titulo}
+              </h3>
+              <p class="text-sm text-neutral-600 mt-3 leading-relaxed">
+                ${project.resumen}
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <button onclick="openProjectModal(${project.id})" class="w-full py-2.5 border border-black/15 text-xs font-semibold uppercase tracking-wider hover:bg-elra-dark hover:text-white transition-colors">
+              Ver Ficha Técnica
+            </button>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-elra-dark', 'text-white');
+          b.classList.add('bg-white', 'text-neutral-700');
+        });
+        btn.classList.remove('bg-white', 'text-neutral-700');
+        btn.classList.add('bg-elra-dark', 'text-white');
+        renderProjects(btn.dataset.filter);
+      });
+    });
+
+    // Modal de ficha técnica
+    const projectModal = document.getElementById('projectModal');
+    const modalContent = document.getElementById('modalContent');
+    const closeModal = document.getElementById('closeModal');
+
+    window.openProjectModal = function(id) {
+      const p = PROJECTS_DATA.find(item => item.id === id);
+      if (!p) return;
+
+      modalContent.innerHTML = `
+        <span class="text-xs font-semibold uppercase tracking-[0.2em] text-elra-terracotta">${p.etiqueta}</span>
+        <h3 class="font-display text-2xl sm:text-3xl font-bold mt-1">${p.titulo}</h3>
+        <div class="flex flex-wrap gap-4 text-xs text-neutral-500 mt-3 pb-4 border-b border-black/10">
+          <span><strong>Ubicación:</strong> ${p.ubicacion}</span>
+          <span><strong>Superficie:</strong> ${p.superficie}</span>
+          <span><strong>Año:</strong> ${p.anio}</span>
+        </div>
+        <p class="text-sm text-neutral-700 mt-4 leading-relaxed">${p.resumen}</p>
+        <h4 class="font-display font-semibold text-base mt-6 mb-3">Alcance Técnico y Soluciones Aplicadas</h4>
+        <ul class="space-y-2 text-sm text-neutral-600">
+          ${p.detalles.map(d => `<li class="flex items-start gap-2"><span class="text-elra-terracotta font-bold">•</span><span>${d}</span></li>`).join('')}
+        </ul>
+        <div class="mt-8 pt-4 border-t border-black/10 flex justify-end">
+          <a href="#contacto" onclick="projectModal.classList.add('hidden')" class="px-6 py-3 bg-elra-dark text-white text-xs font-semibold uppercase tracking-wider hover:bg-elra-terracotta transition-colors">
+            Consultar por un proyecto similar
+          </a>
+        </div>
+      `;
+      projectModal.classList.remove('hidden');
+    };
+
+    closeModal.addEventListener('click', () => projectModal.classList.add('hidden'));
+    projectModal.addEventListener('click', (e) => {
+      if (e.target === projectModal) projectModal.classList.add('hidden');
+    });
+
+    // Menú móvil
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+
+    // Envío real del formulario a Web3Forms
+    const leadForm = document.getElementById('leadForm');
+    const formFeedback = document.getElementById('formFeedback');
+    const submitBtn = document.getElementById('submitBtn');
+
+    leadForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(leadForm);
+      const nombre = formData.get('nombre');
+      const disciplina = formData.get('disciplina');
+      const ubicacion = formData.get('ubicacion');
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando ficha...';
+
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        });
+        const result = await response.json();
+        if (result.success) {
+          formFeedback.className = 'p-4 border border-elra-sage bg-elra-sage/10 text-elra-dark text-sm';
+          formFeedback.innerHTML = `<strong>¡Solicitud enviada con éxito, ${nombre}!</strong> Hemos recibido los datos de tu proyecto de <em>${disciplina}</em> en <em>${ubicacion}</em>. Nos pondremos en contacto contigo a la brevedad.`;
+          formFeedback.classList.remove('hidden');
+          leadForm.reset();
+        } else {
+          throw new Error(result.message || 'Error en el envío');
+        }
+      } catch (err) {
+        formFeedback.className = 'p-4 border border-red-400 bg-red-50 text-red-800 text-sm';
+        formFeedback.textContent = 'Hubo un problema al enviar el formulario. Por favor intenta nuevamente o escríbenos a contacto@elraespacio.com.';
+        formFeedback.classList.remove('hidden');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Enviar Ficha de Proyecto';
+      }
+    });
+
+    // Inicializar
+    document.getElementById('year').textContent = new Date().getFullYear();
+    renderProjects();
+  </script>
+</body>
+</html>
